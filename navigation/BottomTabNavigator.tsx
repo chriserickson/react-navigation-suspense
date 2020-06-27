@@ -68,7 +68,7 @@ const TabOneScreen = withPauseWhenNotVisible(() => {
       </Button>
     </ScrollView>
   );
-}, <Text>Suspended Tab 1 Screen</Text>);
+}, "Tab 1 screen");
 
 const TabOneScreenTwo = withPauseWhenNotVisible(() => {
   const navigation = useNavigation();
@@ -86,7 +86,7 @@ const TabOneScreenTwo = withPauseWhenNotVisible(() => {
       </Button>
     </ScrollView>
   );
-}, <Text>Suspended tab 1 screen 2</Text>);
+}, "Tab 1 screen 2");
 
 function TabOneNavigator() {
   return (
@@ -108,7 +108,7 @@ function TabOneNavigator() {
 const TabTwoStack = createStackNavigator<TabTwoParamList>();
 const TabTwoScreen = withPauseWhenNotVisible(
   () => <FrequentlyUpdatinScreenContent label="Tab 2" />,
-  <Text>Suspended Tab 2 Screen</Text>
+  "Tab 2"
 );
 
 function TabTwoNavigator() {
